@@ -17,3 +17,34 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #dadae5; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#wrapper {
+  padding: 5rem 2rem; /* 80px top/bottom and 32px left/right */
+  border: 1px solid red;
+}
+
+.header-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.header-heading {
+  color: hsl(234, 12%, 34%);
+  font-family: var(--font-primary);
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: 0.17px;
+  margin-bottom: 1rem;
+}
