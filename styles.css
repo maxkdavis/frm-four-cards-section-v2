@@ -31,7 +31,7 @@ body {
 
 #wrapper {
   padding: 5rem 2rem; /* 80px top/bottom and 32px left/right */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-box {
@@ -63,11 +63,15 @@ body {
   border-radius: 8px;
   font-family: var(--font-primary);
   padding: 1.5rem;
-  /* border: 1px solid blue; */
   margin-bottom: 1.5rem;
 }
 
+.box:last-child {
+  margin-bottom: 0;
+}
+
 .box h3 {
+  color: hsl(234, 12%, 34%);
   font-size: 1.25rem; /*20px*/
   font-weight: 600;
   margin-bottom: 0.25em; /*5px*/
@@ -88,4 +92,28 @@ body {
 
 .supervisor-box {
   border-top: 4px solid var(--primary-cyan);
+}
+
+.teambuilder-box {
+  border-top: 4px solid var(--primary-red);
+}
+
+.karma-box {
+  border-top: 4px solid var(--primary-orange);
+}
+
+.calculator-box {
+  border-top: 4px solid var(--primary-blue);
+}
+
+/* MEDIA QUERY FOR DESKTOP LAYOUT */
+@media (min-width: 500px) {
+  body {
+    display: block;
+  }
+
+  .header-box {
+    max-width: 540px;
+    margin: 0 auto 3rem;
+  }
 }
