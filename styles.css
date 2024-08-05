@@ -6,7 +6,7 @@
   --primary-orange: hsl(34, 97%, 64%);
   --primary-blue: hsl(212, 86%, 64%);
 
-  --font-primary: 'Poppins', sans-serif; /*weights used: 200,400,600*/
+  --font-primary: 'Poppins', sans-serif; /*weights: 200,400,600*/
 }
 
 /* Reset any default margin and paddings. */
@@ -23,7 +23,6 @@ html {
 }
 
 body {
-  /* background-color: #dadae5; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,15 +35,57 @@ body {
 }
 
 .header-box {
+  font-family: var(--font-primary);
   text-align: center;
   margin-bottom: 5rem;
 }
 
-.header-heading {
+.heading {
   color: hsl(234, 12%, 34%);
-  font-family: var(--font-primary);
   font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 0.17px;
   margin-bottom: 1rem;
+}
+
+.bold-heading {
+  font-weight: 600;
+}
+
+.header-description {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem; /*15px*/
+  letter-spacing: 0.1px;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  padding: 1.5rem;
+  /* border: 1px solid blue; */
+  margin-bottom: 1.5rem;
+}
+
+.box h3 {
+  font-size: 1.25rem; /*20px*/
+  font-weight: 600;
+  margin-bottom: 0.25em; /*5px*/
+}
+
+.box p {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.8125rem; /*13px*/
+  line-height: 2;
+  letter-spacing: 0.09px;
+  margin-bottom: 2rem;
+}
+
+.box img {
+  display: block;
+  margin-left: auto;
+}
+
+.supervisor-box {
+  border-top: 4px solid var(--primary-cyan);
 }
