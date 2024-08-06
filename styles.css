@@ -109,7 +109,12 @@ body {
 /* MEDIA QUERY FOR DESKTOP LAYOUT */
 @media (min-width: 500px) {
   body {
-    display: block;
+    display: grid;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .header-box {
