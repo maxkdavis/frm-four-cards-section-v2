@@ -107,18 +107,38 @@ body {
 }
 
 /* MEDIA QUERY FOR DESKTOP LAYOUT */
-@media (min-width: 500px) {
+@media (min-width: 750px) {
   body {
     display: grid;
   }
 
   .card-container {
     display: grid;
+    gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1110px;
   }
 
   .header-box {
     max-width: 540px;
     margin: 0 auto 3rem;
+  }
+
+  .box {
+    margin-bottom: 0;
+  }
+
+  .karma-box {
+    grid-column-start: 2;
+  }
+
+  .calculator-box {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .supervisor-box,
+  .calculator-box {
+    transform: translateY(50%);
   }
 }
